@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98588AC2251841640001518A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98588AC1251841640001518A /* AppDelegate.swift */; };
+		98588AC4251841640001518A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98588AC3251841640001518A /* SceneDelegate.swift */; };
+		98588AC6251841640001518A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98588AC5251841640001518A /* ContentView.swift */; };
+		98588AC8251841640001518A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98588AC7251841640001518A /* Assets.xcassets */; };
+		98588ACB251841640001518A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98588ACA251841640001518A /* Preview Assets.xcassets */; };
+		98588ACE251841640001518A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98588ACC251841640001518A /* LaunchScreen.storyboard */; };
+		98588ADF251841F60001518A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98588ADE251841F60001518A /* WidgetKit.framework */; };
+		98588AE1251841F60001518A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98588AE0251841F60001518A /* SwiftUI.framework */; };
+		98588AE4251841F60001518A /* MiniCalWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98588AE3251841F60001518A /* MiniCalWidget.swift */; };
+		98588AE7251841F70001518A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98588AE6251841F70001518A /* Assets.xcassets */; };
+		98588AED251841F70001518A /* MiniCalWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 98588ADC251841F60001518A /* MiniCalWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		988D35C82536914B006EF6CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98588AE6251841F70001518A /* Assets.xcassets */; };
+		988D35D8253697CF006EF6CE /* MiniCalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988D35D7253697CF006EF6CE /* MiniCalHelper.swift */; };
+		988D35DB253697D4006EF6CE /* MiniCalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988D35D7253697CF006EF6CE /* MiniCalHelper.swift */; };
+		988D35DF253697F4006EF6CE /* MiniCalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988D35DE253697F4006EF6CE /* MiniCalExtension.swift */; };
+		988D35E425369803006EF6CE /* MiniCalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988D35DE253697F4006EF6CE /* MiniCalExtension.swift */; };
+		988D35E825369909006EF6CE /* MiniCalConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988D35E725369909006EF6CE /* MiniCalConstant.swift */; };
+		988D35EB2536990F006EF6CE /* MiniCalConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988D35E725369909006EF6CE /* MiniCalConstant.swift */; };
+		98A221AF2536A332009835EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98588AC7251841640001518A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98588AEB251841F70001518A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98588AB6251841640001518A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98588ADB251841F60001518A;
+			remoteInfo = widgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		98588AF1251841F70001518A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				98588AED251841F70001518A /* MiniCalWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		98588ABE251841640001518A /* MiniCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98588AC1251841640001518A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98588AC3251841640001518A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		98588AC5251841640001518A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		98588AC7251841640001518A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98588ACA251841640001518A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		98588ACD251841640001518A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98588ACF251841640001518A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98588ADC251841F60001518A /* MiniCalWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MiniCalWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		98588ADE251841F60001518A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		98588AE0251841F60001518A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		98588AE3251841F60001518A /* MiniCalWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCalWidget.swift; sourceTree = "<group>"; };
+		98588AE6251841F70001518A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98588AE8251841F70001518A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		988D35D7253697CF006EF6CE /* MiniCalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCalHelper.swift; sourceTree = "<group>"; };
+		988D35DE253697F4006EF6CE /* MiniCalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCalExtension.swift; sourceTree = "<group>"; };
+		988D35E725369909006EF6CE /* MiniCalConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCalConstant.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98588ABB251841640001518A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98588AD9251841F60001518A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98588AE1251841F60001518A /* SwiftUI.framework in Frameworks */,
+				98588ADF251841F60001518A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98588AB5251841640001518A = {
+			isa = PBXGroup;
+			children = (
+				98588AC0251841640001518A /* MiniCal */,
+				98588AE2251841F60001518A /* MiniCalWidget */,
+				98588ADD251841F60001518A /* Frameworks */,
+				98588ABF251841640001518A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98588ABF251841640001518A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98588ABE251841640001518A /* MiniCal.app */,
+				98588ADC251841F60001518A /* MiniCalWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98588AC0251841640001518A /* MiniCal */ = {
+			isa = PBXGroup;
+			children = (
+				98588AC1251841640001518A /* AppDelegate.swift */,
+				98588AC3251841640001518A /* SceneDelegate.swift */,
+				98588AC5251841640001518A /* ContentView.swift */,
+				988D35D7253697CF006EF6CE /* MiniCalHelper.swift */,
+				988D35DE253697F4006EF6CE /* MiniCalExtension.swift */,
+				988D35E725369909006EF6CE /* MiniCalConstant.swift */,
+				98588AC7251841640001518A /* Assets.xcassets */,
+				98588ACC251841640001518A /* LaunchScreen.storyboard */,
+				98588ACF251841640001518A /* Info.plist */,
+				98588AC9251841640001518A /* Preview Content */,
+			);
+			path = MiniCal;
+			sourceTree = "<group>";
+		};
+		98588AC9251841640001518A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				98588ACA251841640001518A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		98588ADD251841F60001518A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98588ADE251841F60001518A /* WidgetKit.framework */,
+				98588AE0251841F60001518A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98588AE2251841F60001518A /* MiniCalWidget */ = {
+			isa = PBXGroup;
+			children = (
+				98588AE3251841F60001518A /* MiniCalWidget.swift */,
+				98588AE6251841F70001518A /* Assets.xcassets */,
+				98588AE8251841F70001518A /* Info.plist */,
+			);
+			path = MiniCalWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98588ABD251841640001518A /* MiniCal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98588AD2251841640001518A /* Build configuration list for PBXNativeTarget "MiniCal" */;
+			buildPhases = (
+				98588ABA251841640001518A /* Sources */,
+				98588ABB251841640001518A /* Frameworks */,
+				98588ABC251841640001518A /* Resources */,
+				98588AF1251841F70001518A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98588AEC251841F70001518A /* PBXTargetDependency */,
+			);
+			name = MiniCal;
+			productName = MiniCal;
+			productReference = 98588ABE251841640001518A /* MiniCal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98588ADB251841F60001518A /* MiniCalWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98588AEE251841F70001518A /* Build configuration list for PBXNativeTarget "MiniCalWidget" */;
+			buildPhases = (
+				98588AD8251841F60001518A /* Sources */,
+				98588AD9251841F60001518A /* Frameworks */,
+				98588ADA251841F60001518A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniCalWidget;
+			productName = widgetExtension;
+			productReference = 98588ADC251841F60001518A /* MiniCalWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98588AB6251841640001518A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					98588ABD251841640001518A = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					98588ADB251841F60001518A = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 98588AB9251841640001518A /* Build configuration list for PBXProject "MiniCal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98588AB5251841640001518A;
+			productRefGroup = 98588ABF251841640001518A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98588ABD251841640001518A /* MiniCal */,
+				98588ADB251841F60001518A /* MiniCalWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98588ABC251841640001518A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98588ACE251841640001518A /* LaunchScreen.storyboard in Resources */,
+				98588ACB251841640001518A /* Preview Assets.xcassets in Resources */,
+				988D35C82536914B006EF6CE /* Assets.xcassets in Resources */,
+				98588AC8251841640001518A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98588ADA251841F60001518A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98A221AF2536A332009835EB /* Assets.xcassets in Resources */,
+				98588AE7251841F70001518A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98588ABA251841640001518A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98588AC2251841640001518A /* AppDelegate.swift in Sources */,
+				98588AC4251841640001518A /* SceneDelegate.swift in Sources */,
+				98588AC6251841640001518A /* ContentView.swift in Sources */,
+				988D35D8253697CF006EF6CE /* MiniCalHelper.swift in Sources */,
+				988D35DF253697F4006EF6CE /* MiniCalExtension.swift in Sources */,
+				988D35E825369909006EF6CE /* MiniCalConstant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98588AD8251841F60001518A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98588AE4251841F60001518A /* MiniCalWidget.swift in Sources */,
+				988D35E425369803006EF6CE /* MiniCalExtension.swift in Sources */,
+				988D35DB253697D4006EF6CE /* MiniCalHelper.swift in Sources */,
+				988D35EB2536990F006EF6CE /* MiniCalConstant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98588AEC251841F70001518A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98588ADB251841F60001518A /* MiniCalWidget */;
+			targetProxy = 98588AEB251841F70001518A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98588ACC251841640001518A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98588ACD251841640001518A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98588AD0251841640001518A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98588AD1251841640001518A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98588AD3251841640001518A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniCal/Preview Content\"";
+				DEVELOPMENT_TEAM = 42CJZL97T8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MiniCal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zzzm.minical;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MyCommonDev;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98588AD4251841640001518A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniCal/Preview Content\"";
+				DEVELOPMENT_TEAM = 42CJZL97T8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MiniCal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zzzm.minical;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MyCommonDev;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98588AEF251841F70001518A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42CJZL97T8;
+				INFOPLIST_FILE = MiniCalWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zzzm.minical.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98588AF0251841F70001518A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 42CJZL97T8;
+				INFOPLIST_FILE = MiniCalWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zzzm.minical.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MyCommonDev;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98588AB9251841640001518A /* Build configuration list for PBXProject "MiniCal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98588AD0251841640001518A /* Debug */,
+				98588AD1251841640001518A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98588AD2251841640001518A /* Build configuration list for PBXNativeTarget "MiniCal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98588AD3251841640001518A /* Debug */,
+				98588AD4251841640001518A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98588AEE251841F70001518A /* Build configuration list for PBXNativeTarget "MiniCalWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98588AEF251841F70001518A /* Debug */,
+				98588AF0251841F70001518A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98588AB6251841640001518A /* Project object */;
+}
