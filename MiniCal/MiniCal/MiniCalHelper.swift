@@ -18,8 +18,8 @@ struct MiniCalHelper {
     static var beginningOfMonth: Date {
         
         let date = Date()
-//        var date = Date()
-//        date.add(.month, value: -2)
+        //        var date = Date()
+        //        date.add(.month, value: -2)
         return date.beginning(of: .month) ?? Date()
         
     }
@@ -53,3 +53,4 @@ struct MiniCalHelper {
     }
     
 }
+

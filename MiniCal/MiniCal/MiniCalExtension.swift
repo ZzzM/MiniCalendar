@@ -94,3 +94,25 @@ extension Date {
     }
     
 }
+
+
+import UIKit
+extension UIWindow {
+    
+    func alert(_ title: String, actionTitle: String, handler: @escaping () -> Void) {
+        
+        let alert = UIAlertController(title: title, message: .none, preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: .none)
+        alert.addAction(cancel)
+        
+        let action = UIAlertAction(title: actionTitle, style: .default, handler: { _ in
+            handler()
+        })
+        alert.addAction(action)
+        
+        rootViewController?.present(alert, animated: true, completion: .none)
+    }
+}
+
+
+
