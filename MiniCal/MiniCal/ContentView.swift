@@ -44,8 +44,8 @@ struct ContentView: View {
                         self.showingCalendarAlert = true
                     }
                     .alert(isPresented: $showingCalendarAlert) {
-                        Alert(title: Text("Open System's Calendar？"),
-                              primaryButton: .default(Text("Yes"),
+                        Alert(title: Text("Open Calendar？"),
+                              primaryButton: .default(Text("OK"),
                                                       action: {
                                                         UIApplication.shared.open(.calendar)
                                                       }),
@@ -57,7 +57,7 @@ struct ContentView: View {
                     }
                     .alert(isPresented: $showingRefreshAlert) {
                         Alert(title: Text("Refresh Mini Calendar Widget？"),
-                              primaryButton: .default(Text("Yes"),
+                              primaryButton: .default(Text("OK"),
                                                       action: {
                                                         WidgetCenter.shared.reloadAllTimelines()
                                                       }),

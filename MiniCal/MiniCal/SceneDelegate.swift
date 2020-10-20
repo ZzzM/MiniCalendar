@@ -23,25 +23,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
             self.window = window
             window.makeKeyAndVisible()
-            showAlert(scene, contexts: connectionOptions.urlContexts)
+    
         }
 
     }
 
-    
-    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        showAlert(scene, contexts: URLContexts)
-    }
-    
-    func showAlert(_ scene: UIScene, contexts: Set<UIOpenURLContext>) {
-        window?.alert("Open System's Calendar？", actionTitle: "Yes", handler: {
-            
-            guard let url = contexts.first?.url,  UIApplication.shared.canOpenURL(url) else {
-                return
-            }
-            scene.open(url, options: .none, completionHandler: .none)
-            
-        })
-    }
+   
 }
 
