@@ -93,7 +93,7 @@ struct SmallView: View {
                     Text(WeekNames[$0])
                         .foregroundColor($0 == 0 || $0 == 6 ? .gray : .primary)
                         .fontWeight(.black)
-                    
+                        .font(.caption2)
                 }
             }
             
@@ -101,23 +101,31 @@ struct SmallView: View {
                 
                 ForEach((0..<MiniCalHelper.countOfItems), id: \.self) {
              
+                
                     let color: Color = $0 % 7 == 0 || $0 % 7 == 6 ? .gray: .primary
                     let isToday = $0 == MiniCalHelper.indexOfToday
                     let foregroundColor: Color = isToday ? .white : color
+                    let text = MiniCalHelper.items[$0]
                     
-                    Text(MiniCalHelper.items[$0])
-                        .fontWeight(.bold)
-                        .frame(width: 16, height: 16)
-                        .foregroundColor(foregroundColor)
-                        .background(isToday ? Color.red : Color.miniBackground)
-                        .cornerRadius(16/2)
+                    ZStack(content: {
+                        
+                        if isToday {
+                            Circle()
+                                .frame(width:18,height:18)
+                                .foregroundColor(.red)
+                        }
+                        
+                        Text(text)
+                            .fontWeight(.bold)
+                            .frame(width:15,height:15)
+                            .foregroundColor(foregroundColor)
+                            .minimumScaleFactor(0.1)
+                    })
 
                 }
             }
             
-            
         })
-        .font(.caption2)
         .padding()
         
         
