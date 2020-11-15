@@ -9,6 +9,22 @@ import Foundation
 
 struct MiniCalHelper {
     
+    static var version: String {
+        
+        let bundle = Bundle.main
+        
+        guard let releaseVersionNumber = bundle.releaseVersionNumber else {
+            return ""
+        }
+        
+        guard let buildVersionNumber = bundle.buildVersionNumber else {
+            return ""
+        }
+        
+        return "Version \(releaseVersionNumber) (\(buildVersionNumber))"
+    }
+
+    
     static var beginningOfTomorrow: Date {
         var date = Date().beginning(of: .day) ?? Date()
         date.add(.day, value: 1)

@@ -70,6 +70,8 @@
 		988D35D7253697CF006EF6CE /* MiniCalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCalHelper.swift; sourceTree = "<group>"; };
 		988D35DE253697F4006EF6CE /* MiniCalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCalExtension.swift; sourceTree = "<group>"; };
 		988D35E725369909006EF6CE /* MiniCalConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCalConstant.swift; sourceTree = "<group>"; };
+		98D7CA8725613F17007F3848 /* MiniCal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiniCal.entitlements; sourceTree = "<group>"; };
+		98D7CA8825613F17007F3848 /* MiniCalWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiniCalWidget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		98588AC0251841640001518A /* MiniCal */ = {
 			isa = PBXGroup;
 			children = (
+				98D7CA8725613F17007F3848 /* MiniCal.entitlements */,
 				98588AC1251841640001518A /* AppDelegate.swift */,
 				98588AC3251841640001518A /* SceneDelegate.swift */,
 				98588AC5251841640001518A /* ContentView.swift */,
@@ -148,6 +151,7 @@
 		98588AE2251841F60001518A /* MiniCalWidget */ = {
 			isa = PBXGroup;
 			children = (
+				98D7CA8825613F17007F3848 /* MiniCalWidget.entitlements */,
 				98588AE3251841F60001518A /* MiniCalWidget.swift */,
 				98588AE6251841F70001518A /* Assets.xcassets */,
 				98588AE8251841F70001518A /* Info.plist */,
@@ -422,8 +426,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MiniCal/MiniCal.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"MiniCal/Preview Content\"";
 				DEVELOPMENT_TEAM = 42CJZL97T8;
 				ENABLE_PREVIEWS = YES;
@@ -436,6 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zzzm.minical;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = MyCommonDev;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,8 +454,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MiniCal/MiniCal.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"MiniCal/Preview Content\"";
 				DEVELOPMENT_TEAM = 42CJZL97T8;
 				ENABLE_PREVIEWS = YES;
@@ -461,6 +471,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zzzm.minical;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = MyCommonDev;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -471,8 +483,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MiniCalWidget/MiniCalWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 42CJZL97T8;
 				INFOPLIST_FILE = MiniCalWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,6 +498,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zzzm.minical.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,8 +509,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MiniCalWidget/MiniCalWidget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 42CJZL97T8;
 				INFOPLIST_FILE = MiniCalWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -507,7 +525,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zzzm.minical.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = MyCommonDev;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

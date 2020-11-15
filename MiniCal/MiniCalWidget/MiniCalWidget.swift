@@ -93,7 +93,8 @@ struct SmallView: View {
                     Text(WeekNames[$0])
                         .foregroundColor($0 == 0 || $0 == 6 ? .gray : .primary)
                         .fontWeight(.black)
-                        .font(.caption2)
+                        .frame(width:15,height:15)
+                        .minimumScaleFactor(0.1)
                 }
             }
             

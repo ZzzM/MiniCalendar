@@ -31,45 +31,56 @@ struct ContentView: View {
     
     var body: some View {
         
-        VStack(content: {
-            Text(String.miniCalWidgetDisplayName)
-                .font(.title)
-                .padding()
+        ZStack(content: {
             
+            Color.miniBackground.edgesIgnoringSafeArea(.all)
             
-            HStack(
-                spacing: 30,
-                content: {
-                    button("Calendar") {
-                        self.showingCalendarAlert = true
-                    }
-                    .alert(isPresented: $showingCalendarAlert) {
-                        Alert(title: Text("Open Calendar？"),
-                              primaryButton: .default(Text("OK"),
-                                                      action: {
-                                                        UIApplication.shared.open(.calendar)
-                                                      }),
-                              secondaryButton: .cancel())
-                    }
-                    
-                    button("Refresh") {
-                        self.showingRefreshAlert = true
-                    }
-                    .alert(isPresented: $showingRefreshAlert) {
-                        Alert(title: Text("Refresh Mini Calendar Widget？"),
-                              primaryButton: .default(Text("OK"),
-                                                      action: {
-                                                        WidgetCenter.shared.reloadAllTimelines()
-                                                      }),
-                              secondaryButton: .cancel())
-                    }
-                })
-            
-            
+            VStack(content: {
+
+                Text(String.miniCalWidgetDisplayName)
+                    .font(.title)
+                    .padding()
+                
+                Spacer()
+                
+                HStack(
+                    spacing: 30,
+                    content: {
+                        button("Calendar") {
+                            self.showingCalendarAlert = true
+                        }
+                        .alert(isPresented: $showingCalendarAlert) {
+                            Alert(title: Text("Open Calendar？"),
+                                  primaryButton: .default(Text("OK"),
+                                                          action: {
+                                                            UIApplication.shared.open(.calendar)
+                                                          }),
+                                  secondaryButton: .cancel())
+                        }
+                        
+                        button("Refresh") {
+                            self.showingRefreshAlert = true
+                        }
+                        .alert(isPresented: $showingRefreshAlert) {
+                            Alert(title: Text("Refresh Mini Calendar Widget？"),
+                                  primaryButton: .default(Text("OK"),
+                                                          action: {
+                                                            WidgetCenter.shared.reloadAllTimelines()
+                                                          }),
+                                  secondaryButton: .cancel())
+                        }
+                    })
+                
+                Spacer()
+                
+                Text(MiniCalHelper.version)
+                    .font(.caption)
+                    .padding()
+
+            })
         })
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.miniBackground)
-        .edgesIgnoringSafeArea(.all)
+
+        
     }
 }
 
