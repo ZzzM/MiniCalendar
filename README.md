@@ -8,7 +8,7 @@
 | ----  | ---- |
 | 1.0 | - |
 | 1.1 | 增加跳转系统日历按钮 <br> 点击按钮时出现操作提示 |
-| 1.1 | 适配 iPhone 12 系列 |
+| 1.2 | 适配 iPhone 12 系列 <br> 更新主页UI |
 
 
 
@@ -16,10 +16,10 @@
 
 - 主页
 
-<img src="Previews/l1.PNG" width=150> <img src="Previews/d1.PNG" width=150> 
+<img src="Previews/l1.PNG" width=150>
 
 ---
 
 - 小组件
   
-<img src="Previews/l2.PNG" width=150> <img src="Previews/d2.PNG" width=150>
+<img src="Previews/l2.PNG" width=150> 
